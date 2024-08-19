@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun Fair</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar container justify-content-center">
+    <img src="imgs/logo-new.png" alt="Your Company Logo" style="width: 350px; height: auto;">
+  </nav>
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="imgs/panorama_look.jpg" alt="Banner Image" class="banner-img">
+  </div>
+
+  <div class="container my-4 ">
+    <div class="row justify-content-center contact-info">
+      <div class="col-auto">
+        <a href=""><i class="fas fa-envelope"></i> info@example.com</a>
+      </div>
+      <div class="col-auto">
+        <a href=""><i class="fas fa-phone"></i>GSM 0476 29 40 35</a>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container py-5 mb-5">
+    <h2 class="text-center mb-4">
+      <i class="fas fa-circle"></i> Tenten
+      <i class="fas fa-circle"></i> Koelwagens
+      <i class="fas fa-circle"></i> Tafels
+      <i class="fas fa-circle"></i> Stoelen
+      <i class="fas fa-circle"></i> En Meer!!
+    </h2>
+    <div class="row">
+      <div class="col-md-3 gallery-item">
+        <img src="imgs/tent16.jpg" alt="Image 1" class="img-fluid gallery-img" onclick="openLightbox(this.src)">
+      </div>
+      <div class="col-md-3 gallery-item">
+        <img src="imgs/tent15.jpg" alt="Image 2" class="img-fluid gallery-img" onclick="openLightbox(this.src)">
+      </div>
+      <div class="col-md-3 gallery-item">
+        <img src="imgs/tent14.jpg" alt="Image 3" class="img-fluid gallery-img" onclick="openLightbox(this.src)">
+      </div>
+      <div class="col-md-3 gallery-item">
+        <img src="imgs/tent13.jpg" alt="Image 4" class="img-fluid gallery-img" onclick="openLightbox(this.src)">
+      </div>
+      <div class="col-md-3 gallery-item">
+        <img src="imgs/tent12.jpg" alt="Image 4" class="img-fluid gallery-img" onclick="openLightbox(this.src)">
+      </div>
+      <div class="col-md-3 gallery-item">
+        <img src="imgs/tent11.jpg" alt="Image 4" class="img-fluid gallery-img" onclick="openLightbox(this.src)">
+      </div>
+      <div class="col-md-3 gallery-item">
+        <img src="imgs/tent10.jpg" alt="Image 4" class="img-fluid gallery-img" onclick="openLightbox(this.src)">
+      </div>
+      <div class="col-md-3 gallery-item">
+        <img src="imgs/tent9.jpg" alt="Image 4" class="img-fluid gallery-img" onclick="openLightbox(this.src)">
+      </div>
+      <div class="col-md-3 gallery-item">
+        <img src="imgs/tent8.jpg" alt="Image 4" class="img-fluid gallery-img" onclick="openLightbox(this.src)">
+      </div>
+      <div class="col-md-3 gallery-item">
+        <img src="imgs/tent7.jpg" alt="Image 4" class="img-fluid gallery-img" onclick="openLightbox(this.src)">
+      </div>
+      <div class="col-md-3 gallery-item">
+        <img src="imgs/tent6.jpg" alt="Image 4" class="img-fluid gallery-img" onclick="openLightbox(this.src)">
+      </div>
+      <div class="col-md-3 gallery-item">
+        <img src="imgs/tent5.jpg" alt="Image 4" class="img-fluid gallery-img" onclick="openLightbox(this.src)">
+      </div>
+      <div class="col-md-3 gallery-item">
+        <img src="imgs/tent4.jpg" alt="Image 4" class="img-fluid gallery-img" onclick="openLightbox(this.src)">
+      </div>
+      <div class="col-md-3 gallery-item">
+        <img src="imgs/tent3.jpg" alt="Image 4" class="img-fluid gallery-img" onclick="openLightbox(this.src)">
+      </div>
+      <div class="col-md-3 gallery-item">
+        <img src="imgs/tent2.jpg" alt="Image 4" class="img-fluid gallery-img" onclick="openLightbox(this.src)">
+      </div>
+      <div class="col-md-3 gallery-item">
+        <img src="imgs/tent1.jpg" alt="Image 4" class="img-fluid gallery-img" onclick="openLightbox(this.src)">
+      </div>
+      <!-- Repeat the above divs for more images -->
+    </div>
+    <hr>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Contact Information -->
+        <div class="col-md-12 d-flex justify-content-center footer-info">
+          <div>
+            <a href="mailto:info@example.com"><i class="fas fa-envelope"></i> info@example.com</a>
+          </div>
+          <div>
+            <a href="tel:+0476294035"><i class="fas fa-phone"></i> GSM 0476 29 40 35</a>
+          </div>
+        </div>
+        <!-- Copyright Notice -->
+        <div class="col-12 text-center mt-3">
+          <p id="copyright" class="copyright">&copy; <span id="year"></span> Fun Fair. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close-btn" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" class="lightbox-img" src="" alt="Lightbox Image">
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
