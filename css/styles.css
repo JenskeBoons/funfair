@@ -1,7 +1,7 @@
 /* Customize styles here */
 body {
     font-family: Arial, sans-serif;
-    background-color: #eeeaea;
+    background-color: #ccc;
 }
 
 /* Hide scrollbar */
@@ -15,7 +15,7 @@ body::-webkit-scrollbar {
 }
 
 .navbar-nav a {
-    color: #eeeaea !important;
+    color: #ccc !important;
 }
 
 .navbar-nav a:hover {
@@ -23,7 +23,7 @@ body::-webkit-scrollbar {
 }
 
 .navbar {
-    background-color: #eeeaea !important;
+    background-color: #ccc !important;
 }
 
 .contact-info {
@@ -87,11 +87,13 @@ body::-webkit-scrollbar {
     /* Fade-in animation */
     opacity: 0;
     /* Initially hidden */
+    transition: transform 0.3s ease-in-out;
 }
 
 .gallery-item:hover {
     transform: scale(1.05);
-    /* Scale up on hover */
+    /* time to smotheen animation on hover */
+    
 }
 
 .gallery-img {
